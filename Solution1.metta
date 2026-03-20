@@ -23,6 +23,13 @@
 ;; TEST CASE:
 ;; !(sumIf id isEven 1 5) ; Should return 6 (2 + 4)
 
+(=(id)$x)
+(=(checkodd $a)
+    (if (==(% $a 2) 1)
+    True
+    False)
+)
+
 (=(checkeven $a)
     (if (==(% $a 2) 0) 
     True
